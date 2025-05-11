@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ItemCard from "@/components/item-card";
 import Receipt from "@/components/receipt";
+import MoneyBagIcon from "./money-bag-icon";
 
 // Define the item type
 export type Item = {
@@ -160,8 +161,10 @@ export default function SpendMoneySimulator() {
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
       {/* Title card */}
-      <div className="bg-gray-800 text-white text-center py-4 text-2xl md:text-3xl font-bold rounded-md mb-4 shadow-md border border-gray-700">
-        আওয়ামী লীগের আমলে পাচারকৃত টাকার পরিমাণ
+
+      <div className="bg-gray-800 text-white text-center py-4 px-4 text-2xl md:text-3xl font-bold rounded-md mb-4 shadow-md border border-gray-700 flex items-center justify-center gap-3">
+        <MoneyBagIcon width={36} height={36} />
+        <span>আওয়ামী লীগের আমলে পাচারকৃত টাকার পরিমাণ</span>
       </div>
 
       {/* Sticky header with balance */}
