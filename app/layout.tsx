@@ -9,6 +9,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "The Lost Billions",
   description: "Making sense of আওয়ামী লীগের লুটপাট",
+  openGraph: {
+    type: "website",
+    url: "https://the-lost-billions.vercel.app/",
+    title: "The Lost Billions",
+    description: "Making sense of আওয়ামী লীগের লুটপাট",
+    images: [
+      {
+        url: "https://the-lost-billions.vercel.app/og.png",
+        width: 1200,
+        height: 630,
+        alt: "The Lost Billions",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
